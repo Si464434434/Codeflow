@@ -1,0 +1,127 @@
+export const upcomingEvents = [
+  {
+    id: 1,
+    title: "Web3 & Blockchain Bootcamp",
+    date: "October 12, 2026",
+    time: "10:00 AM – 4:00 PM",
+    location: "Innovation Hub, Block B – Room 204",
+    description:
+      "A full-day deep dive into blockchain fundamentals, smart contracts with Solidity, and building decentralized apps. Hands-on labs included.",
+    type: "Workshop",
+    typeColor: "indigo",
+    seats: 60,
+    registered: 44,
+    image: null,
+  },
+  {
+    id: 2,
+    title: "HackCodeFlow 2026",
+    date: "November 1–2, 2026",
+    time: "9:00 AM (36-hour hackathon)",
+    location: "Main Auditorium & Hackspace",
+    description:
+      "CodeFlow's flagship 36-hour hackathon. Build products, win prizes, and connect with sponsors. Open to all skill levels.",
+    type: "Hackathon",
+    typeColor: "cyan",
+    seats: 200,
+    registered: 138,
+    image: null,
+  },
+  {
+    id: 3,
+    title: "Open Source Sprint – Hacktoberfest Edition",
+    date: "October 25, 2026",
+    time: "2:00 PM – 6:00 PM",
+    location: "Online (Discord + GitHub)",
+    description:
+      "Contribute to curated open-source repos together. Mentors available for beginners. Count your PRs toward Hacktoberfest.",
+    type: "Community",
+    typeColor: "green",
+    seats: null,
+    registered: 72,
+    image: null,
+  },
+  {
+    id: 4,
+    title: "AI/ML Study Circle – Session 8",
+    date: "October 5, 2026",
+    time: "6:00 PM – 8:00 PM",
+    location: "Library Lab 3 & Zoom",
+    description:
+      "Continuing our ML series: Neural Networks from scratch. Bring your laptop. We'll train a small model live together.",
+    type: "Study Circle",
+    typeColor: "purple",
+    seats: 30,
+    registered: 28,
+    image: null,
+  },
+];
+
+export const pastEvents = [
+  {
+    id: 101,
+    title: "React & Vite: Zero to Production",
+    date: "August 18, 2026",
+    location: "Lab 202",
+    description:
+      "A practical workshop on building production-ready React apps with Vite, React Query, and deployment on Vercel.",
+    type: "Workshop",
+    typeColor: "indigo",
+    attendees: 55,
+  },
+  {
+    id: 102,
+    title: "DSA Interview Prep Marathon",
+    date: "July 30, 2026",
+    location: "Seminar Hall",
+    description:
+      "6-hour intensive session on arrays, trees, graphs, and dynamic programming with mock interview rounds.",
+    type: "Session",
+    typeColor: "yellow",
+    attendees: 88,
+  },
+  {
+    id: 103,
+    title: "DevOps & Docker Workshop",
+    date: "June 14, 2026",
+    location: "Online (Zoom)",
+    description:
+      "Containerize your apps with Docker, set up CI/CD pipelines with GitHub Actions, and deploy to the cloud.",
+    type: "Workshop",
+    typeColor: "indigo",
+    attendees: 63,
+  },
+  {
+    id: 104,
+    title: "CodeFlow Annual Meetup 2025",
+    date: "December 20, 2025",
+    location: "Rooftop Terrace, Tech Campus",
+    description:
+      "Our annual celebration of the community — project showcases, awards, networking and fun.",
+    type: "Meetup",
+    typeColor: "pink",
+    attendees: 120,
+  },
+  {
+    id: 105,
+    title: "UI/UX Design Thinking Workshop",
+    date: "May 9, 2026",
+    location: "Design Studio",
+    description:
+      "From wireframes to high-fidelity prototypes using Figma. Learn design thinking principles and user research basics.",
+    type: "Workshop",
+    typeColor: "indigo",
+    attendees: 40,
+  },
+  {
+    id: 106,
+    title: "Linux & Terminal Mastery",
+    date: "April 3, 2026",
+    location: "Lab 101",
+    description:
+      "Shell scripting, process management, networking tools, and building developer workflows on Linux.",
+    type: "Workshop",
+    typeColor: "indigo",
+    attendees: 35,
+  },
+];
