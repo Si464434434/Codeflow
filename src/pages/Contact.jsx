@@ -64,10 +64,23 @@ export default function Contact() {
     const errs = validate();
     if (Object.keys(errs).length) { setErrors(errs); return; }
     setLoading(true);
-    // Simulate API call
-    await new Promise((r) => setTimeout(r, 1400));
-    setLoading(false);
-    setSubmitted(true);
+    try {
+      const res = await fetch(
+        `${import.meta.env.VITE_API_URL || "http://localhost:5000"}/api/members`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.message || "Something went wrong");
+      setSubmitted(true);
+    } catch (err) {
+      setErrors({ submit: err.message });
+    } finally {
+      setLoading(false);
+    }
   };
 
   const inputClass = (field) =>
@@ -244,6 +257,9 @@ export default function Contact() {
                         </>
                       )}
                     </button>
+                    {errors.submit && (
+                      <p className="text-rose-400 text-sm text-center mt-2">{errors.submit}</p>
+                    )}
                   </form>
                 </motion.div>
               )}
