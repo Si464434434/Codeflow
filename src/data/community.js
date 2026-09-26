@@ -1,0 +1,112 @@
+// Community ecosystem partners
+// Update labels/links here — do NOT call anyone a "sponsor" unless verified
+export const ecosystemPartners = [
+  {
+    id: 1,
+    name: "AWS",
+    label: "Cloud Partner",
+    logo: "AWS",
+    color: "from-orange-500 to-amber-500",
+    bg: "bg-orange-500/8",
+    border: "border-orange-500/20",
+    text: "text-orange-400",
+    href: "https://aws.amazon.com",
+  },
+  {
+    id: 2,
+    name: "Microsoft",
+    label: "Technology Partner",
+    logo: "MS",
+    color: "from-blue-500 to-cyan-500",
+    bg: "bg-blue-500/8",
+    border: "border-blue-500/20",
+    text: "text-blue-400",
+    href: "https://microsoft.com",
+  },
+  {
+    id: 3,
+    name: "Google",
+    label: "Ecosystem Partner",
+    logo: "G",
+    color: "from-green-500 to-teal-500",
+    bg: "bg-green-500/8",
+    border: "border-green-500/20",
+    text: "text-green-400",
+    href: "https://google.com",
+  },
+  {
+    id: 4,
+    name: "Naukri",
+    label: "Career Partner",
+    logo: "NK",
+    color: "from-red-500 to-rose-500",
+    bg: "bg-red-500/8",
+    border: "border-red-500/20",
+    text: "text-red-400",
+    href: "https://naukri.com",
+  },
+  {
+    id: 5,
+    name: "Campus",
+    label: "Community Partner",
+    logo: "CP",
+    color: "from-violet-500 to-purple-500",
+    bg: "bg-violet-500/8",
+    border: "border-violet-500/20",
+    text: "text-violet-400",
+    href: "#",
+  },
+  {
+    id: 6,
+    name: "GeeksforGeeks",
+    label: "Learning Partner",
+    logo: "GFG",
+    color: "from-emerald-500 to-green-500",
+    bg: "bg-emerald-500/8",
+    border: "border-emerald-500/20",
+    text: "text-emerald-400",
+    href: "https://geeksforgeeks.org",
+  },
+];
+
+// Hero image collage cards
+// Replace `gradient` with a real `image` URL when CodeFlow photos are available
+// e.g. image: "/photos/hackathon-2025.jpg"
+export const communityImages = [
+  {
+    id: 1,
+    title: "HackCodeFlow 2025",
+    subtitle: "36-hour hackathon • 180 participants",
+    emoji: "🚀",
+    gradient: "from-indigo-600 via-violet-600 to-purple-700",
+    size: "large",   // large card — top left, spans 2 rows
+    image: null,
+  },
+  {
+    id: 2,
+    title: "React Workshop",
+    subtitle: "Live coding session",
+    emoji: "⚛️",
+    gradient: "from-cyan-600 via-teal-600 to-blue-700",
+    size: "medium",
+    image: null,
+  },
+  {
+    id: 3,
+    title: "AI/ML Circle",
+    subtitle: "Weekly study sessions",
+    emoji: "🧠",
+    gradient: "from-fuchsia-600 via-pink-600 to-rose-600",
+    size: "medium",
+    image: null,
+  },
+  {
+    id: 4,
+    title: "Annual Meetup",
+    subtitle: "Community • Networking",
+    emoji: "🎉",
+    gradient: "from-amber-500 via-orange-500 to-red-600",
+    size: "small",
+    image: null,
+  },
+];
