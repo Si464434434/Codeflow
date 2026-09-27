@@ -54,8 +54,8 @@ app.use((req, res) => {
 app.use(errorHandler);
 
 // ── Start server ──────────────────────────────────────────────────────────────
-// Azure App Service uses PORT env var (usually 8080)
-const PORT = process.env.PORT || 8080;
+// Railway automatically sets PORT env var
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`🚀 CodeFlow API running on port ${PORT}`);
   console.log(`   Environment: ${process.env.NODE_ENV || "development"}`);
