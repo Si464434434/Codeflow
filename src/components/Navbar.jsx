@@ -75,10 +75,10 @@ export default function Navbar() {
             </nav>
 
             {/* CTA + Hamburger */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2">
               <Link
                 to="/contact"
-                className="hidden sm:inline-flex btn-primary text-sm"
+                className="hidden lg:inline-flex btn-primary text-sm py-2 px-4"
               >
                 <Zap size={14} />
                 Join Community
