@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ClickEffect from "./components/ClickEffect";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Events from "./pages/Events";
@@ -23,6 +24,7 @@ function ScrollToTop() {
 function Layout() {
   return (
     <div className="min-h-screen flex flex-col bg-[#0a0a0f]">
+      <ClickEffect />
       <Navbar />
       <ScrollToTop />
       <div className="flex-1">
