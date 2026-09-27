@@ -233,31 +233,31 @@ export default function Hero() {
           </div>
 
           {/* ════════════════ RIGHT — Collage ════════════════ */}
-          {/* Desktop collage */}
-          <div className="relative h-[460px] lg:h-[500px] hidden sm:block">
+          {/* Desktop collage — absolute positioned overlapping cards */}
+          <div className="relative h-[480px] lg:h-[520px] w-full">
             {/* Large card — top-left */}
             <CollageCard
               item={communityImages[0]}
               delay={0.3}
-              className="absolute top-0 left-0 w-[53%] h-[57%]"
+              className="absolute top-0 left-0 w-[55%] h-[56%] rounded-2xl overflow-hidden"
             />
             {/* Medium card — top-right */}
             <CollageCard
               item={communityImages[1]}
               delay={0.42}
-              className="absolute top-0 right-0 w-[44%] h-[43%]"
+              className="absolute top-0 right-0 w-[42%] h-[42%] rounded-2xl overflow-hidden"
             />
             {/* Medium card — bottom-left */}
             <CollageCard
               item={communityImages[2]}
               delay={0.54}
-              className="absolute bottom-0 left-0 w-[44%] h-[39%]"
+              className="absolute bottom-0 left-0 w-[42%] h-[40%] rounded-2xl overflow-hidden"
             />
-            {/* Large-ish card — bottom-right */}
+            {/* Large card — bottom-right */}
             <CollageCard
               item={communityImages[3]}
               delay={0.66}
-              className="absolute bottom-0 right-0 w-[53%] h-[54%]"
+              className="absolute bottom-0 right-0 w-[55%] h-[56%] rounded-2xl overflow-hidden"
             />
 
             {/* Live members floating badge */}
@@ -265,9 +265,9 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.75, y: 8 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ delay: 1.0, duration: 0.4, ease: "backOut" }}
-              className="absolute top-[54%] left-1/2 -translate-x-[60%] z-20"
+              className="absolute top-[52%] left-[26%] -translate-x-1/2 z-20"
             >
-              <div className="glass-strong rounded-2xl px-3.5 py-2.5 border border-green-500/30 shadow-xl shadow-black/40 flex items-center gap-2">
+              <div className="glass-strong rounded-2xl px-3 py-2 border border-green-500/30 shadow-xl shadow-black/40 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse shrink-0" />
                 <span className="text-green-300 text-xs font-semibold whitespace-nowrap">
                   500+ Active Members
@@ -280,9 +280,9 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.75, y: 8 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ delay: 1.15, duration: 0.4, ease: "backOut" }}
-              className="absolute top-[40%] right-[1%] z-20"
+              className="absolute top-[38%] right-0 z-20"
             >
-              <div className="glass-strong rounded-2xl px-3.5 py-2.5 border border-indigo-500/30 shadow-xl shadow-black/40">
+              <div className="glass-strong rounded-2xl px-3 py-2 border border-indigo-500/30 shadow-xl shadow-black/40">
                 <span className="text-indigo-300 text-xs font-semibold whitespace-nowrap">
                   🗓&nbsp; Next event in 5 days
                 </span>
@@ -294,7 +294,7 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.75, y: 8 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ delay: 1.28, duration: 0.4, ease: "backOut" }}
-              className="absolute bottom-[38%] right-[2%] z-20"
+              className="absolute bottom-[37%] right-0 z-20"
             >
               <div className="glass-strong rounded-2xl px-3 py-2 border border-amber-500/30 shadow-xl shadow-black/40 flex items-center gap-1.5">
                 <span className="text-amber-300 text-[11px] font-semibold whitespace-nowrap">
@@ -302,12 +302,6 @@ export default function Hero() {
                 </span>
               </div>
             </motion.div>
-          </div>
-
-          {/* Mobile-only: 2-card mini collage */}
-          <div className="grid grid-cols-2 gap-3 sm:hidden" style={{ height: 200 }}>
-            <CollageCard item={communityImages[0]} delay={0.4} className="h-full" />
-            <CollageCard item={communityImages[1]} delay={0.52} className="h-full" />
           </div>
         </div>
       </div>
