@@ -77,20 +77,8 @@ const testimonials = [
 export default function Home() {
   return (
     <main>
-      {/* Hero */}
+      {/* Hero — stats bar already included inside Hero component */}
       <Hero />
-
-      {/* Stats */}
-      <section className="section-padding bg-[#0a0a0f] relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-indigo-950/5 to-transparent pointer-events-none" />
-        <div className="container-custom">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {stats.map((s, i) => (
-              <StatCard key={s.label} {...s} delay={i * 0.1} />
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* What is CodeFlow */}
       <section className="section-padding">
