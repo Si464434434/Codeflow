@@ -77,8 +77,54 @@ const testimonials = [
 export default function Home() {
   return (
     <main>
-      {/* Hero — stats bar already included inside Hero component */}
+      {/* Hero */}
       <Hero />
+
+      {/* ── Featured Event Banner ── */}
+      <section className="bg-[#0a0a0f] py-4">
+        <div className="container-custom">
+          <motion.a
+            href="https://hacktoberfest.com/my/fest/?id=01a06e39-fc60-6632-7cba-6b68fab89ba2"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="flex flex-col sm:flex-row items-center justify-between gap-4 rounded-2xl border border-amber-500/30 bg-gradient-to-r from-amber-500/10 via-orange-500/5 to-[#0a0a0f] px-6 py-4 hover:border-amber-500/60 transition-all duration-300 group"
+          >
+            {/* Left */}
+            <div className="flex items-center gap-4">
+              <div className="text-3xl">🎃</div>
+              <div>
+                <div className="flex items-center gap-2 flex-wrap mb-1">
+                  <span className="text-xs font-bold text-amber-400 uppercase tracking-widest bg-amber-500/15 border border-amber-500/25 px-2 py-0.5 rounded-full">
+                    Official Hacktoberfest 26 Event
+                  </span>
+                  <span className="flex items-center gap-1 text-xs text-green-400 font-semibold">
+                    <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+                    Upcoming
+                  </span>
+                </div>
+                <h3 className="text-white font-bold text-base sm:text-lg">
+                  Hacktoberfest Hack Day Jabalpur
+                </h3>
+                <p className="text-slate-400 text-sm mt-0.5">
+                  🇮🇳 SRIST, Jabalpur &nbsp;·&nbsp; October 1 &nbsp;·&nbsp; 10:00 AM – 2:00 PM
+                </p>
+              </div>
+            </div>
+
+            {/* Right */}
+            <div className="shrink-0">
+              <span className="btn-primary text-sm px-5 py-2.5 group-hover:shadow-amber-500/20">
+                Register Free
+                <ArrowRight size={15} />
+              </span>
+            </div>
+          </motion.a>
+        </div>
+      </section>
 
       {/* What is CodeFlow */}
       <section className="section-padding">
