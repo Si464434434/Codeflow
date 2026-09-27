@@ -1,5 +1,21 @@
 export const upcomingEvents = [
   {
+    id: 0,
+    title: "Hacktoberfest Hack Day Jabalpur",
+    date: "October 1, 2026",
+    time: "10:00 AM – 2:00 PM",
+    location: "SRIST, Jabalpur, IN",
+    description:
+      "An official Hacktoberfest 26 in-person event hosted by SRIST Jabalpur. Join us for a day of open-source contributions, collaborative coding, and community building. All skill levels welcome!",
+    type: "Hackathon",
+    typeColor: "cyan",
+    seats: null,
+    registered: 40,
+    image: null,
+    registrationLink: "https://hacktoberfest.com/my/fest/?id=01a06e39-fc60-6632-7cba-6b68fab89ba2",
+    badge: "🎃 Official Hacktoberfest Event",
+  },
+  {
     id: 1,
     title: "Web3 & Blockchain Bootcamp",
     date: "October 12, 2026",

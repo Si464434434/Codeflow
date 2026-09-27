@@ -36,18 +36,23 @@ export default function EventCard({ event, index = 0, past = false }) {
       }`} />
 
       <div className="p-6 flex flex-col flex-1 gap-4">
-        {/* Type badge + past indicator */}
+        {/* Type badge + past indicator + official badge */}
         <div className="flex items-center justify-between flex-wrap gap-2">
           <span className={`inline-flex items-center px-2.5 py-1 rounded-full border text-xs font-semibold ${badgeClass}`}>
             {type}
           </span>
+          {event.badge && (
+            <span className="text-xs font-semibold text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded-full">
+              {event.badge}
+            </span>
+          )}
           {past && (
             <span className="flex items-center gap-1 text-xs text-slate-500">
               <CheckCircle2 size={13} className="text-green-500" />
               Completed
             </span>
           )}
-          {!past && almostFull && (
+          {!past && !event.badge && almostFull && (
             <span className="text-xs text-amber-400 font-medium animate-pulse">
               Almost full!
             </span>
@@ -113,10 +118,15 @@ export default function EventCard({ event, index = 0, past = false }) {
 
         {/* CTA */}
         {!past && (
-          <button className="btn-primary w-full justify-center mt-auto">
-            Register Now
+          <a
+            href={event.registrationLink || "#"}
+            target={event.registrationLink ? "_blank" : "_self"}
+            rel="noopener noreferrer"
+            className="btn-primary w-full justify-center mt-auto"
+          >
+            {event.badge ? "🎃 Register on Hacktoberfest" : "Register Now"}
             <ArrowRight size={15} />
-          </button>
+          </a>
         )}
       </div>
     </motion.article>
